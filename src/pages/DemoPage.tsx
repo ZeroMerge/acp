@@ -17,7 +17,7 @@ const STEPS = [
 const STEP_EXPLAINERS: Record<number, { title: string; subtitle: string; bullets: string[] }> = {
   1: {
     title: 'On-Chain Agent Identity',
-    subtitle: 'Every agent in the ACP ecosystem requires a verified cryptographic root identity.',
+    subtitle: 'Every dapp agent in the ACP ecosystem requires a verified cryptographic root identity.',
     bullets: [
       'Deploys an AgentIdentity object to the Sui blockchain.',
       'Acts as the absolute root of ownership and permission delegation.',
@@ -165,7 +165,7 @@ export default function DemoPage() {
                       className="flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-[12px] font-medium transition-all duration-200"
                       style={{
                         background: active ? '#0969da' : done ? '#dafbe1' : 'transparent',
-                        color:       active ? '#ffffff'  : done ? '#1a7f37' : '#57606a',
+                        color: active ? '#ffffff' : done ? '#1a7f37' : '#57606a',
                       }}
                     >
                       {done
